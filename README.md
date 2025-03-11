@@ -94,3 +94,5 @@ For detailed manuals about Totus please check: [docs.gototus.com](https://docs.g
 ## Installing
 
 `npm i totus`
+
+[npmjs.com project page](https://www.npmjs.com/package/totus)
