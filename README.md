@@ -22,7 +22,7 @@ key ([create one here](https://gototus.com/console/apikeys))
 
 it will print:
 
-```json
+```
 [
   {
     dist: 71.6,
@@ -52,8 +52,6 @@ it will print:
     lon: -58.38076
   }
 ]
-```
-```json
 {
   as: '15169',
   asn: '15169',
@@ -70,8 +68,6 @@ it will print:
   region: 'California',
   timezone: '-08:00'
 }
-```
-```json
 {
   email: 'test@example.com',
   l1: 'PASSED',
