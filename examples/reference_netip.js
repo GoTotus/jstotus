@@ -14,13 +14,13 @@ try {
         const reference = t.Reference();
 
         console.log("Your Public IP ...");
-        console.log(await reference.IP());
+        console.log(await reference.NetIP());
 
         console.log("Cloudflare 1.1.1.1 ...");
-        console.log(await reference.IP({ip4: '1.1.1.1'}));
+        console.log(await reference.NetIP({ip4: '1.1.1.1'}));
 
         console.log("Cloudflare ip6 for previous 1.1.1.1: 2606:4700:4700::1111 ...");
-        console.log(await reference.IP({ip6: '2606:4700:4700::1111'}));
+        console.log(await reference.NetIP({ip6: '2606:4700:4700::1111'}));
     } catch (error) {
         console.error('Error:', error.message);
     }
