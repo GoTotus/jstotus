@@ -13,6 +13,11 @@ key ([create one here](https://gototus.com/console/apikeys))
         console.log((await totus.Reference().GeoPOI({gh:'69y7pkxfc', distance: 1000, what: 'shop', limit: 2})).map(poi=>poi.data()));
         console.log(await totus.Reference().IP({ip4: '8.8.8.8'}));
         console.log((await totus.Validate().email('test@example.com')).data());
+
+        // Check authentication & balance (free of charge)
+        const auth = await totus.authenticated();
+        console.log(`Authenticated: ${auth.authenticated()} (${auth.tokenSm()})`);
+        console.log(`Balance: ${(await totus.balance()).credits()} Credits`);
     } catch (error) {
         console.error('Error:', error.message);
     }
